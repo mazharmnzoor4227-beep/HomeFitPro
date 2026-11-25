@@ -6,12 +6,13 @@ import io.flutter.FlutterInjector
 class HomeFitProApplication : Application() {
     override fun onCreate() {
         super.onCreate()
-        // Start Flutter initialization here without blocking onCreate() with
-        // ensureInitializationComplete(), allowing MainActivity.getFlutterShellArgs()
-        // to configure shell flags cleanly.
+        GraphicsMode.judgeLastLaunch(this)
+        if (!GraphicsMode.compat(this)) return
         try {
-            FlutterInjector.instance().flutterLoader().startInitialization(this)
-        } catch (_: Throwable) {
+            val loader = FlutterInjector.instance().flutterLoader()
+            loader.startInitialization(this)
+            loader.ensureInitializationComplete(this, arrayOf(GraphicsMode.DISABLE_IMPELLER))
+        } catch (e: Throwable) {
         }
     }
 }

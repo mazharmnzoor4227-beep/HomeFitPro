@@ -31,7 +31,7 @@ class MainActivity : FlutterActivity() {
     override fun getFlutterShellArgs(): FlutterShellArgs {
         val args = super.getFlutterShellArgs()
         GraphicsMode.starting(this)
-        args.add(GraphicsMode.DISABLE_IMPELLER)
+        if (GraphicsMode.compat(this)) args.add(GraphicsMode.DISABLE_IMPELLER)
         return args
     }
 
