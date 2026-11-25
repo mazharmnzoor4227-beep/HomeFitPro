@@ -374,6 +374,7 @@ const Map<String, String> kExerciseNameEs = {
   'rNGdsup': 'Sostén en anillas',
   'rNGemus': 'Muscle-up en anillas',
   'plank-hold': 'Plancha',
+  'sit-up': 'Abdominal completo',
   'side-plank-hold': 'Plancha lateral',
   'dead-hang-hold': 'Colgarse de la barra',
   'outdoor-run': 'Correr',
@@ -3085,6 +3086,13 @@ const Map<String, List<String>> kExerciseStepsEs = {
     'Aprieta los glúteos y el abdomen.',
     'Mantén la cadera nivelada, sin hundirla ni subirla.',
     'Respira con calma y aguanta el tiempo que hayas puesto.',
+  ],
+  'sit-up': [
+    'Túmbate boca arriba con las rodillas dobladas unos 90 grados y los pies apoyados en el suelo.',
+    'Pon las manos a los lados de la cabeza, con los codos abiertos, sin tirar del cuello.',
+    'Aprieta el abdomen y sube el torso vértebra a vértebra hasta acercar el pecho a las rodillas.',
+    'Mantén los pies apoyados y la cadera en el suelo.',
+    'Baja con control, desenrollando hasta apoyar los hombros en el suelo.',
   ],
   'side-plank-hold': [
     'Túmbate de lado con el codo bajo el hombro y las piernas juntas.',
