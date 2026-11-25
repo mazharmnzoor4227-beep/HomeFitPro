@@ -25,17 +25,16 @@ android {
         isCoreLibraryDesugaringEnabled = true
     }
 
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_17.toString()
+    }
+
     defaultConfig {
         applicationId = "com.homefitpro.app"
         minSdk = 24
         targetSdk = 36
         versionCode = flutter.versionCode
         versionName = flutter.versionName
-    }
-
-    lint {
-        checkReleaseBuilds = false
-        abortOnError = false
     }
 
     dependenciesInfo {
@@ -62,12 +61,6 @@ android {
                 signingConfigs.getByName("debug")
             }
         }
-    }
-}
-
-kotlin {
-    compilerOptions {
-        jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17)
     }
 }
 
